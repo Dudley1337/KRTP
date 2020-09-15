@@ -215,10 +215,12 @@ void Military_Ships_Charact::put()
 			cout << "Корабль идет на ремонт/реставрацию? => ";
 			break;
 		case 2:
-			cout << "Габариты судна: " << endl << "	Длина => ";
+			cout << "Габариты судна: " << endl;
+			cout << "Длина => ";
+			cout.width(45);
 			break;
 		case 3:
-			cout << "	Ширина => ";
+			cout << "Ширина => ";
 			break;
 		case 4:
 			cout << "Район плавания => ";
@@ -227,20 +229,19 @@ void Military_Ships_Charact::put()
 			cout << "Тип энергетической установки => ";
 			break;
 		case 6:
-			cout << "Водоизмещение => ";
-			break;
-		case 7:
 			cout << "Экипаж => ";
 			break;
-		case 8:
+		case 7:
 			cout << "Количество пассажиров => ";
 			break;
-		case 9:
+		case 8:
 			cout << "Скорость => ";
 			break;
 		default:
 			break;
 		}
+		cout.setf(ios::left);
+		cout.width(45);
 		puts(name[i]);
 	}
 }

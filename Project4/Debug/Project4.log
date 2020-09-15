@@ -1,10 +1,1 @@
-﻿  CIVILIAN.cpp
-  Civi_Ship_Charact.cpp
-  MILITARY.cpp
-  Military_Ships_Charact.cpp
-  PortCreater.cpp
-  Ship.cpp
-  main.cpp
-C:\Users\Admin\source\repos\KursovayaPort\Project4\main.cpp(11,8): warning C4101: D: неиспользованная локальная переменная
-  Создание кода...
-  Project4.vcxproj -> C:\Users\Admin\source\repos\KursovayaPort\Debug\Project4.exe
+﻿  Project4.vcxproj -> C:\Users\Admin\source\repos\KursovayaPort\Debug\Project4.exe

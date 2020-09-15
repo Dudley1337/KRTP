@@ -26,7 +26,7 @@ bool Exception::diapazon(int digit, int left_border, int right_border)
 	try
 	{
 		if ((digit < left_border) || (digit > right_border))
-			throw 7641;
+			throw 222;
 		return false;
 	}
 	catch (const int& ex)

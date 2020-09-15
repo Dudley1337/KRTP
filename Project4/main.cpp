@@ -33,6 +33,7 @@ int main()
 		cout << "Выберите боевые или гражданские корабли: " << endl;
 		cout << "1 - Боевые" << endl;
 		cout << "2 - Гражданские" << endl;
+		cout << "0 - EXIT" << endl;
 
 
 		cin >> swtch;
@@ -67,7 +68,7 @@ int main()
 				{
 					fin.open("MILITARY_SHIPS.txt");
 					if (!fin.is_open()) {
-						throw 505;
+						throw 111;
 					}
 					MILITARY_factory = new MILITARY_SHIPS;
 					buffer = game.createPort(*MILITARY_factory);
@@ -90,7 +91,7 @@ int main()
 				{
 					fin.open("MILITARY_SHIPS.txt");
 					if (!fin.is_open()) {
-						throw 505;
+						throw 111;
 					}
 					for (int i = 0; i < num_MILITARY_factory; i++)
 					{
@@ -143,7 +144,7 @@ int main()
 				{
 					fin.open("CIVILIAN_SHIPS.txt");
 					if (!fin.is_open()) {
-						throw 505;
+						throw 111;
 					}
 					CIVILIAN_factory = new CIVILIAN_SHIPS;
 					buffer = game.createPort(*CIVILIAN_factory);
@@ -166,7 +167,7 @@ int main()
 				{
 					fin.open("CIVILIAN_SHIPS.txt");
 					if (!fin.is_open()) {
-						throw 505;
+						throw 111;
 					}
 					for (int i = 0; i < num_CIVILIAN_factory; i++)
 					{
@@ -190,8 +191,8 @@ int main()
 				break;
 			}
 			break;
-		default:
-			break;
+		case 0:
+			return 0;
 		}
 	}
 	system("pause");

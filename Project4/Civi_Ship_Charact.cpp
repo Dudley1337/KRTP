@@ -290,7 +290,9 @@ void Civi_Ship_Charact::info()
 			cout << "Корабль идет на ремонт/реставрацию? => ";
 			break;
 		case 2:
-			cout << "Габариты судна: " << endl << "Длина => ";
+			cout << "Габариты судна: " << endl;
+			cout << "Длина => ";
+			cout.width(45);
 			break;
 		case 3:
 			cout << "Ширина => ";
@@ -313,6 +315,8 @@ void Civi_Ship_Charact::info()
 		default:
 			break;
 		}
+		cout.setf(ios::left);
+		cout.width(45);
 		puts(name[i]);
 	}
 }
