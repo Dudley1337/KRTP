@@ -4,7 +4,7 @@
 Military_Ships_Charact::Military_Ships_Charact()
 {
 	num_of_characteristics = 0;
-	cout << "Вызвался конструктор Military_ships_characteristics" << endl << endl;
+	cout << /*"Вызвался конструктор Military_ships_characteristics" << endl <<*/ endl;
 }
 
 void Military_Ships_Charact::set_name()
@@ -108,7 +108,7 @@ void Military_Ships_Charact::set_name()
 	///4-ая характеристика
 
 	cout << "Укажтие район плавания корабля: " << endl;
-	cout << "1 - Морской район А1 " << endl << "2 - Морской район А2 " << endl << "3 - Морской район А3 " << endl << "4 - Морской район А4 " << endl;
+	cout << "1 - Морской район Alfa " << endl << "2 - Морской район Bravo " << endl << "3 - Морской район Charlie " << endl << "4 - Морской район Delta " << endl;
 
 	do
 	{
@@ -117,16 +117,16 @@ void Military_Ships_Charact::set_name()
 	switch (swtch)
 	{
 	case 1:
-		strcpy(name[num_of_characteristic], "Морской район А1");
+		strcpy(name[num_of_characteristic], "Морской район Alfa");
 		break;
 	case 2:
-		strcpy(name[num_of_characteristic], "Морской район А2");
+		strcpy(name[num_of_characteristic], "Морской район Bravo");
 		break;
 	case 3:
-		strcpy(name[num_of_characteristic], "Морской район А3");
+		strcpy(name[num_of_characteristic], "Морской район Charlie");
 		break;
 	case 4:
-		strcpy(name[num_of_characteristic], "Морской район А4");
+		strcpy(name[num_of_characteristic], "Морской район Delta");
 		break;
 	default:
 		break;
@@ -137,7 +137,7 @@ void Military_Ships_Charact::set_name()
 	///5-ая характеристика
 
 	cout << "Тип энергетической установки корабля: " << endl;
-	cout << "1 - Пароход " << endl << "2 - Дизельный двигатель " << endl << "3 - Электрическая " << endl << "4 - Атомная " << endl;
+	cout << "1 - Газотурбинная " << endl << "2 - Дизельный двигатель " << endl << "3 - Электрическая " << endl << "4 - Атомная " << endl;
 
 	do
 	{
@@ -146,7 +146,7 @@ void Military_Ships_Charact::set_name()
 	switch (swtch)
 	{
 	case 1:
-		strcpy(name[num_of_characteristic], "Пароход");
+		strcpy(name[num_of_characteristic], "Газотурбинная");
 		break;
 	case 2:
 		strcpy(name[num_of_characteristic], "Дизельный двигатель");

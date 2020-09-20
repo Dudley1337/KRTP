@@ -3,7 +3,7 @@
 Civi_Ship_Charact::Civi_Ship_Charact()
 {
 	num_of_characteristics = 0;
-	cout << "Вызвался конструктор Civilian_ships_characteristics" << endl << endl;
+	cout <</* "Вызвался конструктор Civilian_ships_characteristics" << endl << */endl;
 }
 
 void Civi_Ship_Charact::set_name()
@@ -107,7 +107,7 @@ void Civi_Ship_Charact::set_name()
 	///4-ая характеристика
 
 	cout << "Укажтие район плавания корабля: " << endl;
-	cout << "1 - Морской район А1 " << endl << "2 - Морской район А2 " << endl << "3 - Морской район А3 " << endl << "4 - Морской район А4 " << endl;
+	cout << "1 - Морской район Alfa " << endl << "2 - Морской район Bravo " << endl << "3 - Морской район Charlie " << endl << "4 - Морской район Delta " << endl;
 
 	do
 	{
@@ -116,16 +116,16 @@ void Civi_Ship_Charact::set_name()
 	switch (swtch)
 	{
 	case 1:
-		strcpy(name[num_of_characteristic], "Морской район А1");
+		strcpy(name[num_of_characteristic], "Морской район Alfa");
 		break;
 	case 2:
-		strcpy(name[num_of_characteristic], "Морской район А2");
+		strcpy(name[num_of_characteristic], "Морской район Bravo");
 		break;
 	case 3:
-		strcpy(name[num_of_characteristic], "Морской район А3");
+		strcpy(name[num_of_characteristic], "Морской район Charlie");
 		break;
 	case 4:
-		strcpy(name[num_of_characteristic], "Морской район А4");
+		strcpy(name[num_of_characteristic], "Морской район Delta");
 		break;
 	default:
 		break;
@@ -292,7 +292,6 @@ void Civi_Ship_Charact::info()
 		case 2:
 			cout << "Габариты судна: " << endl;
 			cout << "Длина => ";
-			cout.width(45);
 			break;
 		case 3:
 			cout << "Ширина => ";
@@ -315,8 +314,6 @@ void Civi_Ship_Charact::info()
 		default:
 			break;
 		}
-		cout.setf(ios::left);
-		cout.width(45);
 		puts(name[i]);
 	}
 }
